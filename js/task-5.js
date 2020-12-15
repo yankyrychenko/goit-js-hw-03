@@ -3,7 +3,7 @@ const getAllPropValues = function (array, prop) {
   // Write code under this line
   const allPropValues = [];
   for (const value of array) {
-    if (prop === value.prop) {
+    if (prop in value) {
       allPropValues.push(value[prop]);
     }
   }
