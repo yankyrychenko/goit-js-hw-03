@@ -1,11 +1,7 @@
 const countProps = function (obj) {
-  "use strict";
-  // Write code under this line
   return Object.keys(obj).length;
 };
 
-console.log(countProps({})); // 0
-
-console.log(countProps({ a: 1, b: 1 })); // 2
-
-console.log(countProps({ a: 1, b: 1, c: 1, d: 1, e: 1 })); // 5
+console.log(countProps({}));
+console.log(countProps({ name: 'Mango', age: 2 }));
+console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 }));
